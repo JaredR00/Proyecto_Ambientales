@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasifica los Residuos</title>
+    <link rel="stylesheet" href="css/clasificacion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="clasificacion-container">
+        <header class="game-header">
+            <h1><i class="fas fa-trash-alt"></i> Clasifica los Residuos</h1>
+            <div class="game-info">
+                <div class="score-box">
+                    <i class="fas fa-star"></i>
+                    <span id="score">0</span>
+                </div>
+                <div class="timer-box">
+                    <i class="fas fa-clock"></i>
+                    <span id="time">60</span>s
+                </div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <div class="bins-container">
+                <div class="bin" data-type="organico">
+                    <div class="bin-lid organic"></div>
+                    <div class="bin-body organic">
+                        <i class="fas fa-leaf"></i>
+                        <span>Orgánico</span>
+                    </div>
+                </div>
+                <div class="bin" data-type="reciclable">
+                    <div class="bin-lid recyclable"></div>
+                    <div class="bin-body recyclable">
+                        <i class="fas fa-recycle"></i>
+                        <span>Reciclable</span>
+                    </div>
+                </div>
+                <div class="bin" data-type="peligroso">
+                    <div class="bin-lid hazardous"></div>
+                    <div class="bin-body hazardous">
+                        <i class="fas fa-skull-crossbones"></i>
+                        <span>Peligroso</span>
+                    </div>
+                </div>
+                <div class="bin" data-type="no-reciclable">
+                    <div class="bin-lid non-recyclable"></div>
+                    <div class="bin-body non-recyclable">
+                        <i class="fas fa-ban"></i>
+                        <span>No Reciclable</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items-container" id="itemsContainer">
+                <!-- Los residuos se generarán dinámicamente aquí -->
+            </div>
+        </main>
+
+        <div class="game-overlay" id="startScreen">
+            <div class="overlay-content">
+                <h2>¿Cómo jugar?</h2>
+                <p>Arrastra cada residuo al contenedor correcto según su tipo. Tienes 60 segundos para clasificar correctamente la mayor cantidad posible.</p>
+                <button class="start-btn" id="startBtn">Comenzar Juego</button>
+            </div>
+        </div>
+
+        <div class="game-overlay" id="endScreen" style="display: none;">
+            <div class="overlay-content">
+                <h2 id="resultTitle">¡Tiempo terminado!</h2>
+                <div class="result-score">
+                    Clasificaste <span id="finalScore">0</span> residuos correctamente
+                </div>
+                <div class="result-message" id="resultMessage"></div>
+                <div class="result-actions">
+                    <button class="action-btn" id="restartBtn">
+                        <i class="fas fa-redo"></i> Jugar de nuevo
+                    </button>
+                    <a href="juegos.html" class="action-btn back-btn">
+                        <i class="fas fa-arrow-left"></i> Volver a juegos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/clasificacion.js"></script>
+</body>
+</html>

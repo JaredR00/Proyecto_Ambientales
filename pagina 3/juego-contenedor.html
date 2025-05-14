@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adivina el Contenedor</title>
+  <link rel="stylesheet" href="css/juegos.css" />
+</head>
+<body>
+  <header class="juegos-hero">
+    <h1>¿Dónde va este residuo?</h1>
+    <p>¡Responde correctamente!</p>
+  </header>
+
+  <main class="contenedor-game">
+    <div class="contenedor-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/3146/3146161.png" alt="Botellas de plástico" />
+    </div>
+    
+    <div class="options">
+      <button onclick="verificarRespuesta('amarillo')">Amarillo</button>
+      <button onclick="verificarRespuesta('verde')">Verde</button>
+      <button onclick="verificarRespuesta('azul')">Azul</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </main>
+
+  <div class="volver">
+    <button onclick="window.history.back()">⬅ Volver al menú</button>
+  </div>
+
+  <script src="js/juegos.js"></script>
+  <script>
+    let correctAnswer = 'amarillo';
+
+    const verificarRespuesta = (respuesta) => {
+      const resultDiv = document.getElementById('result');
+      if (respuesta === correctAnswer) {
+        resultDiv.innerHTML = "<p style='color: green;'>¡Correcto! Las botellas de plástico van al contenedor amarillo.</p>";
+      } else {
+        resultDiv.innerHTML = "<p style='color: red;'>¡Incorrecto! Intenta de nuevo.</p>";
+      }
+    }
+  </script>
+</body>
+</html>

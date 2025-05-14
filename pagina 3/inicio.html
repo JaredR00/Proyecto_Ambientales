@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAprende | Plataforma de Reciclaje Educativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Header Minimalista -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">♻️</span>
+                    <span class="logo-text">EcoAprende</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active">Inicio</a>
+                    <a href="aprende.html" class="nav-link">Aprende</a>
+                    <a href="juegos.html" class="nav-link">Juegos</a>
+                    <a href="eco-tips.html" class="nav-link">Eco-Tips</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforma tu conciencia ecológica</h1>
+                <p class="hero-subtitle">Aprende sobre reciclaje de manera interactiva y divertida</p>
+                <button class="hero-cta" id="explorarBtn">Explorar Contenido</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://santiagorecicla.mma.gob.cl/wp-content/uploads/2015/12/recycling.png" alt="Reciclaje interactivo" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Tarjetas de Contenido -->
+        <section class="content-cards">
+            <div class="card" id="aprendeBtn">
+                <div class="card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Aprende</h3>
+                <p>Guías completas sobre clasificación de residuos y procesos de reciclaje</p>
+                <span class="card-badge">Educación</span>
+            </div>
+
+            <div class="card" id="juegosBtn">
+                <div class="card-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Juega</h3>
+                <p>Divertidos juegos para poner a prueba tus conocimientos ecológicos</p>
+                <span class="card-badge">Interactivo</span>
+            </div>
+
+            <div class="card" onclick="window.location.href='eco-tips.html'">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Eco-Tips</h3>
+                <p>Consejos prácticos para aplicar en tu vida diaria y reducir tu impacto</p>
+                <span class="card-badge">Práctico</span>
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section class="stats-section">
+            <h2 class="section-title">El impacto del reciclaje</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="90">0</div>
+                    <div class="stat-label">% menos energía</div>
+                    <div class="stat-desc">Reciclar aluminio vs producir nuevo</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="17">0</div>
+                    <div class="stat-label">árboles salvados</div>
+                    <div class="stat-desc">Por cada tonelada de papel reciclado</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">% menos agua</div>
+                    <div class="stat-desc">Reciclar vidrio vs materia prima</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">♻️</span>
+                    <span class="logo-text">EcoAprende</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos de uso</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                © 2023 EcoAprende. Todos los derechos reservados.
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

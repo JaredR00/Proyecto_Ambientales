@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Tips del Día</title>
+    <link rel="stylesheet" href="css/eco-tips.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="eco-wrapper">
+        <div class="eco-card animate__animated animate__fadeIn">
+            <div class="eco-header">
+                <h1 class="eco-title">🌿 Eco-Tips del Día 🌿</h1>
+                <div class="eco-counter">Tip <span id="tipCounter">1</span>/<span id="totalTips"></span></div>
+                <div class="eco-progress">
+                    <div class="eco-progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            
+            <div class="eco-tip-container">
+                <div class="eco-tip-box" id="tipBox"></div>
+                <div class="eco-tip-actions">
+                    <button class="eco-btn eco-main-btn" id="newTipBtn">
+                        <span class="btn-icon">💡</span> Nuevo Eco-Tip
+                    </button>
+                    <button class="eco-btn eco-fav-btn" id="favBtn">
+                        <span class="btn-icon">⭐</span> Guardar
+                    </button>
+                </div>
+            </div>
+            
+            <div class="eco-footer">
+                <div class="eco-favorites" id="favoritesContainer" style="display:none;">
+                    <h3>⭐ Tus Favoritos</h3>
+                    <ul id="favoritesList"></ul>
+                </div>
+                <a href="inicio.html" class="eco-back">
+                    <span class="back-icon">←</span> Volver al menú principal
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/eco-tips.js"></script>
+</body>
+</html>

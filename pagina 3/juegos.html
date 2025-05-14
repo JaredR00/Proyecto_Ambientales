@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Ecológicos</title>
+    <link rel="stylesheet" href="css/juegos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="juegos-hero animate__animated animate__fadeInDown">
+        <div class="hero-content">
+            <h1>Juegos Ecológicos</h1>
+            <p>Aprende sobre el medio ambiente mientras te diviertes</p>
+            <div class="eco-badges">
+                <span class="badge"><i class="fas fa-leaf"></i> Educativo</span>
+                <span class="badge"><i class="fas fa-gamepad"></i> Interactivo</span>
+                <span class="badge"><i class="fas fa-recycle"></i> Sostenible</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="juegos-container">
+        <!-- Juego de Memoria -->
+        <div class="juego-card animate__animated animate__fadeInUp" data-game="memory">
+            <div class="game-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>Memoria Ecológica</h3>
+            <p>Encuentra las parejas de conceptos ambientales y aprende sobre sostenibilidad</p>
+            <div class="game-stats">
+                <span><i class="fas fa-star"></i> 4.8</span>
+                <span><i class="fas fa-users"></i> 500+</span>
+            </div>
+        </div>
+
+     <!-- Busca la sección del card del Quiz y modifícala así: -->
+<div class="juego-card animate__animated animate__fadeInUp" data-game="quiz" style="animation-delay: 0.2s;" onclick="location.href='quiz.html'">
+    <div class="game-icon">
+        <i class="fas fa-question-circle"></i>
+    </div>
+    <h3>Quiz Ambiental</h3>
+    <p>Pon a prueba tus conocimientos sobre ecología y sostenibilidad</p>
+    <div class="game-stats">
+        <span><i class="fas fa-star"></i> 4.6</span>
+        <span><i class="fas fa-users"></i> 300+</span>
+    </div>
+</div>
+
+        <!-- Juego de Clasificación -->
+        <div class="juego-card animate__animated animate__fadeInUp" data-game="sorting" style="animation-delay: 0.4s;" onclick="location.href='clasificacion.html'">
+            <div class="game-icon">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+            <h3>Clasifica los Residuos</h3>
+            <p>Aprende a separar correctamente los diferentes tipos de desechos</p>
+            <div class="game-stats">
+                <span><i class="fas fa-star"></i> 4.9</span>
+                <span><i class="fas fa-users"></i> 700+</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para los juegos -->
+    <div class="game-modal" id="gameModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido del juego se cargará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="volver">
+        <a href="inicio.html" class="eco-home-btn">
+            <i class="fas fa-home"></i> Volver al Menú Principal
+            <span class="btn-hover-effect"></span>
+        </a>
+    </footer>
+    <script src="js/juegos.js"></script>
+</body>
+</html>

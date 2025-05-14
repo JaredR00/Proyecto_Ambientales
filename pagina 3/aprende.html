@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende sobre Reciclaje | Guía Completa</title>
+    <meta name="description" content="Guía completa sobre reciclaje: tipos de residuos, colores de contenedores y beneficios para el medio ambiente">
+    <link rel="stylesheet" href="css/aprende.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate__animated animate__fadeInLeft">
+                <h1><i class="fas fa-recycle"></i> Aprende sobre Reciclaje</h1>
+                <p class="subtitle">Descubre cómo transformar tus residuos en recursos y contribuir al cuidado del planeta</p>
+                <div class="hero-actions">
+                    <button class="cta-btn" onclick="scrollToSection('info')">
+                        <span>Explorar Guía</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <div class="eco-badges">
+                        <span class="badge"><i class="fas fa-leaf"></i> Sostenible</span>
+                        <span class="badge"><i class="fas fa-globe-americas"></i> Ecológico</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img animate__animated animate__fadeInRight">
+                <img src="https://cdn-icons-png.flaticon.com/512/5601/5601166.png" alt="Ilustración de reciclaje" loading="lazy">
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#4CAF50"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="#4CAF50"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#4CAF50"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main id="info" class="main-content">
+        <section class="intro-section animate__animated animate__fadeIn">
+            <div class="container">
+                <h2><i class="fas fa-recycle"></i> ¿Qué es el reciclaje?</h2>
+                <p class="lead-text">El reciclaje es un proceso esencial que transforma materiales usados en nuevos productos, reduciendo la necesidad de extraer recursos naturales y minimizando nuestro impacto ambiental.</p>
+                <div class="eco-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-trash-alt"></i>
+                        <h3>1.4 kg</h3>
+                        <p>Basura generada por persona al día</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-battery-full"></i>
+                        <h3>50%</h3>
+                        <p>De residuos electrónicos no se reciclan</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-tree"></i>
+                        <h3>17 árboles</h3>
+                        <p>Se salvan por cada tonelada de papel reciclado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Guía Completa de Reciclaje</h2>
+                <p class="section-subtitle">Conoce los aspectos fundamentales para reciclar correctamente</p>
+                
+                <div class="card-grid">
+                    <div class="card animate__animated animate__fadeInUp">
+                        <div class="card-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Tipos de Residuos" loading="lazy">
+                        </div>
+                        <h3>Tipos de Residuos</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-apple-alt"></i> Orgánicos (restos de comida)</li>
+                            <li><i class="fas fa-plastic-bottle"></i> Inorgánicos (plásticos, vidrio)</li>
+                            <li><i class="fas fa-laptop"></i> Electrónicos (RAEE)</li>
+                            <li><i class="fas fa-skull-crossbones"></i> Peligrosos (baterías, químicos)</li>
+                        </ul>
+                        <button class="card-btn" onclick="showModal('tipos')">Más información</button>
+                    </div>
+                    
+                    <div class="card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                        <div class="card-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/826/826070.png" alt="Colores de Contenedores" loading="lazy">
+                        </div>
+                        <h3>Colores de Contenedores</h3>
+                        <div class="color-grid">
+                            <div class="color-item" style="background-color: #1976D2;">
+                                <span>Azul</span>
+                                <p>Papel y cartón</p>
+                            </div>
+                            <div class="color-item" style="background-color: #FDD835;">
+                                <span>Amarillo</span>
+                                <p>Plásticos y latas</p>
+                            </div>
+                            <div class="color-item" style="background-color: #388E3C;">
+                                <span>Verde</span>
+                                <p>Vidrio</p>
+                            </div>
+                            <div class="color-item" style="background-color: #D32F2F;">
+                                <span>Rojo</span>
+                                <p>Peligrosos</p>
+                            </div>
+                        </div>
+                        <button class="card-btn" onclick="showModal('contenedores')">Ver detalles</button>
+                    </div>
+                    
+                    <div class="card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <div class="card-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/189/189792.png" alt="Beneficios del reciclaje" loading="lazy">
+                        </div>
+                        <h3>Beneficios del Reciclaje</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> Reduce la contaminación ambiental</li>
+                            <li><i class="fas fa-check-circle"></i> Ahorra energía y recursos naturales</li>
+                            <li><i class="fas fa-check-circle"></i> Disminuye el volumen de basura</li>
+                            <li><i class="fas fa-check-circle"></i> Genera empleos verdes</li>
+                            <li><i class="fas fa-check-circle"></i> Protege los ecosistemas</li>
+                        </ul>
+                        <button class="card-btn" onclick="showModal('beneficios')">Saber más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="container">
+                <h2>¿Listo para convertirte en un héroe del reciclaje?</h2>
+                <p>Descarga nuestra guía completa con todos los tips para reciclar correctamente</p>
+                <a href="https://www.gob.mx/cms/uploads/attachment/file/644839/102_2020_Metodologia_acciones_mitigacion_reciclaje_residuos_solidos_urbanos.pdf" class="cta-btn download-btn" target="_blank">
+                    <i class="fas fa-download"></i> Descargar Guía
+                </a>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-recycle"></i> EcoAprende</h3>
+                    <p>Educando para un futuro sostenible</p>
+                </div>
+                <div class="footer-links">
+                    <a href="inicio.html"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="juegos.html"><i class="fas fa-gamepad"></i> Juegos</a>
+                    <a href="eco-tips.html"><i class="fas fa-book"></i> Eco-Tips</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 EcoAprende. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido dinámico -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/aprende.js"></script>
+</body>
+</html>

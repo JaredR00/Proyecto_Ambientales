@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Ambiental</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1><i class="fas fa-leaf"></i> Quiz Ambiental</h1>
+            <div class="quiz-progress">
+                <div class="progress-bar" id="progressBar"></div>
+                <span id="progressText">1/10</span>
+            </div>
+            <div class="quiz-score">
+                <span id="score">0</span> puntos
+            </div>
+        </header>
+
+        <main class="quiz-body">
+            <div class="question-container" id="questionContainer">
+                <!-- Las preguntas se cargarán aquí dinámicamente -->
+            </div>
+
+            <div class="quiz-result" id="quizResult">
+                <h2 id="resultTitle">¡Resultados del Quiz!</h2>
+                <div class="result-score">
+                    Obtuviste <span id="finalScore">0</span> de 10 puntos
+                </div>
+                <div class="result-message" id="resultMessage"></div>
+                <button class="quiz-btn" id="restartQuiz">Volver a Intentar</button>
+                <a href="juegos.html" class="quiz-btn back-btn">
+                    <i class="fas fa-arrow-left"></i> Volver a Juegos   
+                </a>
+            </div>
+        </main>
+    </div>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
